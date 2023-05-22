@@ -1,0 +1,29 @@
+{
+  "name": "do-group-kafka",
+  "version": "1.0.0",
+  "description": "This simple repository demonstrates how to consumes and produces message with Kafka",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:build": "npx tsc && node dist/index.js",
+    "send_message": "node src/send_message.js",
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "email": "arsene582@gmail.com",
+    "name": "Arsène Fougerouse",
+    "url": "https://gridexx.fr"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "kafkajs": "^2.2.4"
+  }
+}
