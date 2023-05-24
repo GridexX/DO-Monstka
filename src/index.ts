@@ -1,3 +1,3 @@
-import { consumesMessages } from "./consumer/consumer";
+import { consumesAvroMessages, consumesMessages } from "./consumer/consumer";
 
-consumesMessages();
+consumesAvroMessages();

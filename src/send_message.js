@@ -9,7 +9,7 @@ const sendMessage = async (message) => {
   try {
     await producer.connect();
     await producer.send({
-      topic: "do",
+      topic: "do-avro",
       messages: [{ value: message, headers: { username: "gridexx" } }],
     });
     console.log("Message sent successfully.");
